@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <main class="hero">
+        <div class="card">
+            <div class="badge">FLASK WEBSITE</div>
+            <h1>Hello, this is my website! 👋</h1>
+            <p>A clean and modern website running locally with Python Flask.</p>
+            <button onclick="showMessage()">Explore Website</button>
+            <div id="message" class="message"></div>
+        </div>
+    </main>
+    <script>
+        function showMessage() {
+            document.getElementById("message").textContent =
+                "Welcome! Your Flask website is working perfectly.";
+        }
+    </script>
+</body>
+</html>
